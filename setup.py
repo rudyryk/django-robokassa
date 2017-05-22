@@ -18,11 +18,11 @@ else:
 
 setup(
     name='django-robokassa',
-    version='1.2',
+    version='1.4',
     author='Mikhail Korobov',
     author_email='kmike84@gmail.com',
 
-    packages=['django_robokassa', 'django_robokassa.migrations'],
+    packages=['robokassa', 'robokassa.migrations'],
 
     url='https://bitbucket.org/kmike/django-robokassa/',
     license = 'MIT license',

@@ -11,9 +11,9 @@ try:
 except NameError:
     unicode = str
 
-from django_robokassa.conf import LOGIN, PASSWORD1, PASSWORD2
-from django_robokassa.conf import STRICT_CHECK, FORM_TARGET, EXTRA_PARAMS, TEST_MODE
-from django_robokassa.models import SuccessNotification
+from robokassa.conf import LOGIN, PASSWORD1, PASSWORD2
+from robokassa.conf import STRICT_CHECK, FORM_TARGET, EXTRA_PARAMS, TEST_MODE
+from robokassa.models import SuccessNotification
 
 class BaseRobokassaForm(forms.Form):
     def __init__(self, *args, **kwargs):

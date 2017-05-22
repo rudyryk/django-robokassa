@@ -1,5 +1,4 @@
-#coding: utf-8
-
+# -*- coding: utf-8 -*- 
 from django.conf import settings
 
 # обязательные параметры - реквизиты магазина
@@ -17,14 +16,7 @@ STRICT_CHECK = getattr(settings, 'ROBOKASSA_STRICT_CHECK', True)
 TEST_MODE = getattr(settings, 'ROBOKASSA_TEST_MODE', False)
 
 # url, по которому будет идти отправка форм
-FORM_TARGET = u'https://merchant.roboxchange.com/Index.aspx'
-
-if TEST_MODE:
-    FORM_TARGET = getattr(
-        settings, 
-        'ROBOKASSA_TEST_FORM_TARGET', 
-        u'https://auth.robokassa.ru/Merchant/Index.aspx'
-    )
+FORM_TARGET = 'https://auth.robokassa.ru/Merchant/Index.aspx'
 
 # список пользовательских параметров ("shp" к ним приписывать не нужно)
 EXTRA_PARAMS = sorted(getattr(settings, 'ROBOKASSA_EXTRA_PARAMS', []))

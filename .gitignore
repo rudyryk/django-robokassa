@@ -1,6 +1,8 @@
+.DS_Store
+__pycache__
 .tox
 *.pyc
+*.egg-info
 MANIFEST
 build/
 dist/
-django_robokassa.egg-info
